@@ -1,3 +1,4 @@
+// this program will execute a game of war where whoever runs out of cards wins
 
 class Deck { //class that contains functions that will create a 52 card deck and shuffle it, deal it between 2 players
 constructor(){}
