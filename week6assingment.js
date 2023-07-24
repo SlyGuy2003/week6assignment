@@ -15,7 +15,7 @@ constructor(){}
             for(let x = 0; x < types.length; x++){
                 // if the type starts with a letter, puts a number value in front of it, making it easier to compare later on
                 if (types[x].charAt(0) === 'A' || types[x].charAt(0) === 'J' || types[x].charAt(0) === 'Q' || types[x].charAt(0) === 'K'){
-                    let card = `${cardNum} (${types[x]}) of ${suits[i]}`
+                    var card = `${cardNum} (${types[x]}) of ${suits[i]}`
                     
                 }
                 else { // just conbines normally if the type starts with a number
