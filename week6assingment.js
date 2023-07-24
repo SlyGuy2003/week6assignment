@@ -11,11 +11,11 @@ constructor(){}
 
         //creates the deck, combining every type with every suit. pushing it to the deck array
         for(let i = 0; i < suits.length; i++){
-            var cardNum = 2
+            let cardNum = 2
             for(let x = 0; x < types.length; x++){
                 // if the type starts with a letter, puts a number value in front of it, making it easier to compare later on
                 if (types[x].charAt(0) === 'A' || types[x].charAt(0) === 'J' || types[x].charAt(0) === 'Q' || types[x].charAt(0) === 'K'){
-                    var card = `${cardNum} (${types[x]}) of ${suits[i]}`
+                    let card = `${cardNum} (${types[x]}) of ${suits[i]}`
                     
                 }
                 else { // just conbines normally if the type starts with a number
@@ -67,7 +67,7 @@ constructor(){}
 
 const playGame = (firstPlayersCards, secondPlayersCards) => { // function that uses the 2 players cards and runs the game
 
-    var turn = 1 // variable that counts how many turns have passed
+    let turn = 1 // variable that counts how many turns have passed
 
     for(let i = 0; firstPlayersCards.length > i && secondPlayersCards.length > i;) { //loops through until a player looses all their cards
 
@@ -111,7 +111,7 @@ const playGame = (firstPlayersCards, secondPlayersCards) => { // function that u
 
 }
 
-var deck1 = new Deck() //creates a new deck object
+const deck1 = new Deck() //creates a new deck object
 
 firstPlayersCards = deck1.getPlayer1Deck() // gets both players deck
 secondPlayersCards = deck1.getPlayer2Deck()
